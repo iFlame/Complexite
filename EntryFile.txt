@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------------
+-     Projet de complexite de Clement Audry et Quentin Cornevin                     -
+-                                                                                   -
+- Ceci est le fichier en entré lu par le programme, les informations rentrées ne    -
+- seront prise en compte que si elles sont écrite par les lignes : "//"               -
+-------------------------------------------------------------------------------------
+
+//
+3x3
+1x2,1x2,2x1,2x1,1x1
+//
