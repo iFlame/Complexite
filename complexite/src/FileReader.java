@@ -27,7 +27,7 @@ public class FileReader {
             BufferedReader br = new BufferedReader(ipsr);
             String line;
             while ((line = br.readLine()) != null) {
-              //  System.out.println(line);
+                //  System.out.println(line);
                 dataAnalyse(line);
             }
             br.close();
@@ -38,13 +38,13 @@ public class FileReader {
     }
 
     private void dataAnalyse(String line) {
-        if(noData) {
+        if (noData) {
             createList(line);
-            if(line.compareTo("//") == 0) {
+            if (line.compareTo("//") == 0) {
                 noData = false;
             }
         }
-        if(line.compareTo("//") == 0) {
+        if (line.compareTo("//") == 0) {
             noData = true;
         }
     }
@@ -53,9 +53,9 @@ public class FileReader {
     private void createList(String line) {
         String[] firstSplit = line.split(",");
         String[] secondSplit;
-        for(int i = 0; i < firstSplit.length; i++) {
+        for (int i = 0; i < firstSplit.length; i++) {
             secondSplit = firstSplit[i].split("x");
-            Figure fig = new Figure(Integer.parseInt(secondSplit[1]),Integer .parseInt(secondSplit[0]),0,0);
+            Figure fig = new Figure(Integer.parseInt(secondSplit[1]), Integer.parseInt(secondSplit[0]), 0, 0);
             figures.add(fig);
         }
     }

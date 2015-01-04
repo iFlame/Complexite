@@ -16,6 +16,7 @@ public class Figure {
         this.y = y;
     }
 
+
     public int getLargeur() {
         return largeur;
     }
